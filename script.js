@@ -349,7 +349,7 @@ function render () {
     $form,
     $filters,
     $list,
-    $empty
+    ...($empty ? [$empty] : [])
   )
 }
 
